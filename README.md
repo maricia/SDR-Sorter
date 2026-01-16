@@ -41,77 +41,77 @@ Suggested screenshots:
 - ZIP file selection dialog
 - Completed output directory structure
 
-You can add images like this:
-```markdown
-![SDR Sorter GUI](screenshots/sdr_sorter_gui.png)
- 
-How It Works
+---
 
-ZIP Extraction
-The application extracts all files from the selected SDR ZIP archive.
+## How It Works
 
-Workflow Selection
-Users choose between ODS or TestHound, which determines the sorting rules applied.
+**1. ZIP Extraction**
 
-Rule-Based Classification
-Files are categorized using domain-specific logic, including:
+  The application extracts all files from the selected SDR ZIP archive.
+  
+**2. Workflow Selection**
 
-Assessment type (STAAR 3–8, STAAR EOC, TELPAS, TELPAS Alt)
+  Users choose between **ODS** or **TestHound**, which determines the sorting rules applied.
+  
+**3. Rule-Based Classification**
 
-Special identifiers (e.g., EOC, Alt, ProductionExaminee)
+  Files are categorized using domain-specific logic, including:
+  - Assessment type (STAAR 3–8, STAAR EOC, TELPAS, TELPAS Alt)
+  - Special identifiers (e.g., EOC, Alt, ProductionExaminee)
+  - File naming patterns and embedded dates
+    
+**4. Standardized Output**
 
-File naming patterns and embedded dates
+   Files are placed into clearly labeled folders. Any files that do not match known patterns are placed in an **Unsorted** folder for review, along with a text file listing those files.
+   
+**5. User-Friendly Delivery**
 
-Standardized Output
-Files are placed into clearly labeled folders. Any files that do not match known patterns are placed in an Unsorted folder for review, along with a text file listing those files.
+   The tool is designed to be packaged as a one-click executable so it can be used by non-technical staff without Python installed.
 
-User-Friendly Delivery
-The tool is designed to be packaged as a one-click executable so it can be used by non-technical staff without Python installed.
+## Key Features
 
-Key Features
+ - GUI-based desktop application (Tkinter)
+   
+ - Supports both ODS and TestHound workflows
 
-GUI-based desktop application (Tkinter)
+ - Automatically processes any SDR ZIP file
+   
+ - Rule-driven, repeatable, and auditable logic
+   
+ - Handles edge cases and unknown files safely
+   
+ - Designed for real-world operational use
 
-Supports both ODS and TestHound workflows
+## Tech Stack
 
-Automatically processes any SDR ZIP file
+ - Python
 
-Rule-driven, repeatable, and auditable logic
+ - Tkinter (GUI)
 
-Handles edge cases and unknown files safely
+ - Standard Python libraries for file and ZIP handling
 
-Designed for real-world operational use
+## Intended Audience
 
-Tech Stack
+ - K–12 data and assessment teams
 
-Python
+ - District analytics and accountability staff
 
-Tkinter (GUI)
+ - Operations teams handling large assessment data drops
 
-Standard Python libraries for file and ZIP handling
+ - Anyone needing reliable, repeatable file processing without manual effort
 
-Intended Audience
-
-K–12 data and assessment teams
-
-District analytics and accountability staff
-
-Operations teams handling large assessment data drops
-
-Anyone needing reliable, repeatable file processing without manual effort
-
-Why This Project Exists
+## Why This Project Exists
 
 This tool was built to solve a real operational problem encountered in district-level data workflows, where automation is often needed but engineering resources are limited. It demonstrates how domain knowledge and software engineering can be combined to deliver practical, high-impact solutions.
 
-Future Enhancements
+## Future Enhancements
 
-Configurable rule sets
+ - Configurable rule sets
 
-Logging and run summaries
+ - Logging and run summaries
 
-Expanded packaging and distribution options
+ - Expanded packaging and distribution options
 
-Additional workflow support
+ - Additional workflow support
 
-License
+## License
