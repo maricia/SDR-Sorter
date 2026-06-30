@@ -10,4 +10,4 @@ venv/
 *.doc
 
 # vs app
-*.vscode/
+.vscode/
