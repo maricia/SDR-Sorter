@@ -1,14 +1,10 @@
-
 # Python
-
 __pycache__/
 *.pyc
-
-## Virtual Environments
-
+# Virtual Environments
 .venv/
 venv/
 
-## files
-
+# files
 *.pdf
+*.doc
