@@ -8,3 +8,6 @@ venv/
 # files
 *.pdf
 *.doc
+
+# vs app
+*.vscode/
